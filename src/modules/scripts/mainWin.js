@@ -4,15 +4,15 @@ import timer from './timer'
 
 function MainWin(){
     const [date, setDate] = useState(timer())
-    const [ifDeadline, setIfDeadline] = useState(true)
+    const [ifDeadline, setIfDeadline] = useState(false)
     useEffect(()=>{
-        if(ifDeadline){
+        if(!ifDeadline){
             setInterval(() => {
                 setDate(timer())
-            },1000)
+            })
             
     } else if(date.days === 0 && date.hours === 0 && date.minutes === 0 && date.seconds === 0 ){
-        setIfDeadline(false)
+        setIfDeadline(true)
     }
     },[ifDeadline])
     return(
@@ -48,9 +48,9 @@ function MainWin(){
                     </div>
                 </div>
             </div>
-            <div>
-                <p></p>
-                <a></a>
+            <div className='evBtnCont'>
+                <p>Check our event page when you wait:</p>
+                <a href='https://leadentrepreneursummit.com/'>Go to the event</a>
             </div>
         </div>
     )

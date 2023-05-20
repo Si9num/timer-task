@@ -5,7 +5,7 @@ function Header() {
       <div className="header">
         <div className="vectorLeft"></div>
         <div className="logo">
-        <img src={require(`../../assets/logo.png`)} alt='img'></img>
+       <a href=''><img src={require(`../../assets/logo.png`)} alt='logo'></img> </a> 
         </div>
         <div className='vectorRight'></div>
       </div>

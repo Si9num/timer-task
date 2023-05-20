@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+
 }
 
 .strongP {
@@ -70,4 +71,44 @@
     color: #FFFFFF;
     margin-top: 14%;
 
+}
+
+.evBtnCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.evBtnCont a {
+    display: flex;
+    width: 60%;
+    height: 6vh;
+    background-color: #1D4169;
+    color: #FFFFFF;
+    border-radius: 30px;
+    align-items: center;
+    padding-left: 8%;
+    background-image: url(../../assets/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    text-decoration: none;
+}
+
+.evBtnCont a:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.evBtnCont a:active {
+    opacity: 1.5;
+    transition: 0.3s;
+    transform: scale(0.7);
 }

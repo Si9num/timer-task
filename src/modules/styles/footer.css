@@ -1,0 +1,54 @@
+.footer {
+    display: flex;
+    background-color: #162C4E;
+    width: 100%;
+    height: 20vh;
+    margin-top: 5.6vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.evForm {
+    display: flex;
+    align-items: center;
+}
+
+.emailInput {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    outline: none;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 30px;
+}
+
+.btnEmail {
+    border: none;
+    outline: none;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 30px;
+    background-color: #DF2224;
+    background-image: url(../../assets/arrow.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-left: -13%;
+
+}
+
+.btnEmail:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.btnEmail:active {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+    transform: scale(0.7);
+}
