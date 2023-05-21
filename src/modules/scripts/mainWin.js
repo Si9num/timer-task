@@ -28,21 +28,21 @@ function MainWin(){
                 </div>
                 <p>:</p>
                 <div className='dateContainer'>
-                    <p>{date.hours}</p>
+                    <p>{date.hours.toString().padStart(2,"0")}</p>
                     <div className='bgDate'>
                         <p>Hours</p>
                     </div>
                 </div>
                 <p>:</p>
                 <div className='dateContainer'>
-                    <p>{date.minutes}</p>
+                    <p>{date.minutes.toString().padStart(2,"0")}</p>
                     <div className='bgDate'>
                         <p>Minutes</p>
                     </div>
                 </div>
                 <p>:</p>
                 <div className='dateContainer'>
-                    <p>{date.seconds}</p>
+                    <p>{date.seconds.toString().padStart(2,"0")}</p>
                     <div className='bgDate'>
                         <p>Seconds</p>
                     </div>

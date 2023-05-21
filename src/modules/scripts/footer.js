@@ -6,9 +6,18 @@ import Modal from './modal';
 function Footer(){
     const [value, setValue] = useState('')
     const [modal,setModal] =useState('hidden')
-    const [data,setData]= useState({h:"SUCCESS!",p:`You have successfully subscribed to the email newsletter`})
+    const [data,setData]= useState('')
+    const [isDisabled,setIsDisabled] = useState(true)
  
-    
+    const checkEmail =(ev)=>{
+        setValue(ev.target.value);
+        const regExp = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
+        if(!regExp.test(ev.target.value)){
+            setIsDisabled(true)
+        }else{
+            setIsDisabled(false)
+        }
+    }
     const changeModal = (state)=>{
         setModal(state)
     }
@@ -27,9 +36,10 @@ function Footer(){
             placeholder='Enter your Email and get notified' 
             required 
             value={value} 
-            onChange={(ev)=>{setValue(ev.target.value)}}></input>
-            <button  className='btnEmail' onClick={()=>{subBtn(); setData(JSON.parse(sessionStorage.getItem('res')));
-                setModal("visible");
+            onChange={checkEmail}></input>
+            <button disabled={isDisabled} className='btnEmail' onClick={()=>{subBtn();
+            setTimeout(()=>{setData(JSON.parse(sessionStorage.getItem('res')));setModal("visible");},500) ;
+                
                 }}></button>
             </form>
         </div>

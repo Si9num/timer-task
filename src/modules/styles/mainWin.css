@@ -112,3 +112,106 @@
     transition: 0.3s;
     transform: scale(0.7);
 }
+
+@media screen and (max-width: 1024px) {
+    .strongP {
+        font-size: 45px;
+    }
+
+    .descrP {
+        font-size: 16px;
+    }
+
+    .timer {
+
+        font-size: 45px;
+    }
+
+    .bgDate p {
+        font-size: 10px;
+    }
+
+    .evBtnCont {
+        font-size: 16px;
+    }
+
+    .evBtnCont a {
+        width: 60%;
+        height: 6vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .strongP {
+        font-size: 36px;
+    }
+
+    .descrP {
+        font-size: 16px;
+    }
+
+    .timer {
+
+        font-size: 36px;
+    }
+
+    .bgDate p {
+        font-size: 10px;
+    }
+
+    .bgDate {
+        width: 9vw;
+    }
+
+    .evBtnCont {
+        font-size: 16px;
+    }
+
+    .evBtnCont a {
+        width: 60%;
+        height: 6vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .strongP {
+        font-size: 36px;
+        width: 70%;
+        text-align: center;
+    }
+
+
+    .bgDate p {
+        font-size: 10px;
+    }
+
+    .bgDate {
+        width: 14vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .strongP {
+        font-size: 36px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .descrP {
+
+        font-size: 15px;
+
+    }
+
+    .bgDate p {
+        font-size: 10px;
+    }
+
+    .bgDate {
+        width: 17vw;
+    }
+
+    .evBtnCont {
+        font-size: 15px;
+    }
+}

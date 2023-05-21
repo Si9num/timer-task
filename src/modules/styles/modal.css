@@ -70,11 +70,7 @@
     transition: 0.3s;
 }
 
-.modal button:active {
-    opacity: 1.5;
-    transition: 0.3s;
-    transform: scale(0.7);
-}
+
 
 .cross {
     width: 20%;
@@ -89,4 +85,68 @@
 
 .cross:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .modal {
+        width: 25%;
+        height: 20%;
+    }
+
+    .modal p:nth-child(2) {
+        font-size: 14px;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal {
+        width: 30%;
+        height: 20%;
+    }
+
+    .modal p:nth-child(2) {
+        font-size: 12px;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .modal {
+        width: 50%;
+        height: 20%;
+    }
+
+    .modal p:nth-child(2) {
+        font-size: 12px;
+        width: 95%;
+    }
+
+    .modal button {
+        border: none;
+        outline: none;
+        width: 80%;
+        height: 4vh;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .modal {
+        width: 60%;
+        height: 20%;
+    }
+
+    .modal p:nth-child(2) {
+        font-size: 12px;
+        width: 95%;
+    }
+
+    .modal button {
+        border: none;
+        outline: none;
+        width: 80%;
+        height: 4vh;
+        font-size: 14px;
+    }
 }

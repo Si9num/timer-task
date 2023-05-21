@@ -3,10 +3,12 @@
     background-color: #162C4E;
     width: 100%;
     height: 20vh;
-    margin-top: 5.6vh;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .evForm {
@@ -51,4 +53,76 @@
     opacity: 1;
     transition: 0.3s;
     transform: scale(0.7);
+}
+
+.btnEmail:disabled {
+    background-color: grey;
+}
+
+.btnEmail:disabled:hover {
+    cursor: auto;
+    opacity: 1;
+}
+
+.btnEmail:disabled:active {
+    cursor: auto;
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media screen and (max-width: 1024px) {
+
+
+    .emailInput {
+        font-size: 18px;
+        width: 30vw;
+        height: 4vh;
+    }
+
+    .btnEmail {
+        width: 3vw;
+        height: 4vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .emailInput {
+        font-size: 14px;
+        width: 40vw;
+        height: 4vh;
+    }
+
+    .btnEmail {
+        width: 4vw;
+        height: 4vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .emailInput {
+        font-size: 14px;
+        width: 60vw;
+        height: 4vh;
+    }
+
+    .btnEmail {
+        width: 7vw;
+        height: 4vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .emailInput {
+        font-size: 14px;
+        width: 70vw;
+        height: 4vh;
+    }
+
+    .btnEmail {
+        width: 9vw;
+        height: 4vh;
+    }
 }

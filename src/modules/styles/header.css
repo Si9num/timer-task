@@ -36,3 +36,33 @@
     background-repeat: no-repeat;
 
 }
+
+@media screen and (max-width: 768px) {
+    .logo {
+        margin-top: 10%;
+    }
+
+    .logo img {
+        width: 75%;
+        margin: auto;
+    }
+
+    .vectorLeft {
+        width: 33%;
+        height: 25vh;
+    }
+
+    .vectorRight {
+        width: 33%;
+        height: 25vh;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .logo img {
+        width: 95%;
+        margin: auto;
+    }
+
+}

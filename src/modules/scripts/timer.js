@@ -7,6 +7,7 @@ function timer(){
     let hours = Math.floor(diff/3600000) % 24;
     let minutes = Math.floor(diff/60000) % 60;
     let seconds = Math.floor(diff/1000) % 60;
+    
     const date ={
         days : days,
         hours : hours,
