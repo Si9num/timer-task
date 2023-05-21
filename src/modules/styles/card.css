@@ -17,15 +17,20 @@
     border-right: #FFFFFF 1px solid;
 }
 
+.cardName:hover {
+    cursor: pointer;
+}
+
 .cardName p:first-child {
-    font-size: 15px;
+    font-size: 19px;
     transform: rotate(270deg);
     white-space: nowrap;
+    font-weight: 400;
 }
 
 .card {
     width: 40vw;
-    height: 40vh;
+    height: 60vh;
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,4 +63,96 @@
     font-size: 18px;
     line-height: 150%;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.cardDesc a {
+    display: flex;
+    width: 60%;
+    height: 4vh;
+    background-color: transparent;
+    color: #FFFFFF;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    border-left: 3px solid #FFFFFF;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cardDesc a:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .cardName {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        height: 50vh;
+    }
+
+    .cardDesc a {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .card {
+        height: 40vh;
+
+    }
+
+    .cardDesc a {
+        width: 90%;
+        font-size: 10px;
+    }
+
+    .cardDesc {
+        width: 50%;
+    }
+
+    .evWinH {
+        font-size: 36px;
+    }
+
+    .cardName {
+        font-size: 10px;
+    }
+
+    .cardName p:first-child {
+        font-size: 14px;
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .emailInput {
+        font-size: 14px;
+        width: 70vw;
+        height: 4vh;
+    }
+
+    .btnEmail {
+        width: 9vw;
+        height: 4vh;
+    }
+
+    .othEvBtn {
+        display: flex;
+        width: 40%;
+
+    }
 }

@@ -14,7 +14,6 @@ let res = {
 xhr.onload = function() {
     sessionStorage.clear()
     if (xhr.status == 201) {
-    console.log(xhr.responseText);
     res.h = 'SUCCESS!'
     res.p = 'You have successfully subscribed to the email newsletter'
     sessionStorage.setItem('res',JSON.stringify(res))
@@ -24,7 +23,7 @@ xhr.onload = function() {
         res.h = "OOPS"
         res.p = "Something went wrong"
         sessionStorage.setItem('res',JSON.stringify(res))
-    console.log(xhr.statusText);
+   
     }
     };
     xhr.send(JSON.stringify(formData));
@@ -33,7 +32,7 @@ xhr.onload = function() {
         res.h = "OOPS"
         res.p = "Something went wrong"
         sessionStorage.setItem('res',JSON.stringify(res))
-    console.log(xhr.statusText);
+    
     }
     
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import '../../styles/card.css'
 
 
@@ -14,8 +14,6 @@ function Card(props){
             newArr[i]='3%'
         }
        }
-       console.log(props.id)
-       
        props.onChangeWidth(newArr)
     }
     return(
@@ -28,7 +26,7 @@ function Card(props){
             <div className='cardDesc'>
                 <p>{props.name}</p>
                 <p>{props.date}</p>
-                <button>More information</button>
+                <a href='https://leadentrepreneursummit.com/'>More information</a>
             </div>
         </div>
         </div>

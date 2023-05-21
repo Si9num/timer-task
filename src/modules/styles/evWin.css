@@ -6,8 +6,21 @@
     align-content: center;
     flex-wrap: wrap;
     bottom: -30vh;
+    align-items: center;
 
 
+}
+
+.evWinH {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 104%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #162C4E;
+    opacity: 0.39;
 }
 
 .cardContainer {
