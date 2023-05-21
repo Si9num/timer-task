@@ -1,0 +1,19 @@
+.evWin {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    bottom: -30vh;
+
+
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}

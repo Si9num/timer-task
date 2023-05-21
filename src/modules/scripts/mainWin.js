@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import '../styles/mainWin.css'
-import timer from './timer'
+import timer from './tools/timer'
 
 function MainWin(){
     const [date, setDate] = useState(timer())

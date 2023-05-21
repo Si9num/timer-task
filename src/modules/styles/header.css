@@ -12,6 +12,7 @@
     align-items: flex-start;
     justify-content: center;
     margin-top: 5%;
+    animation: 1s ease-out 0s 1 appearUp;
 
 }
 
@@ -26,6 +27,7 @@
     background-image: url(../../assets/vector-left.png);
     background-repeat: no-repeat;
     background-size: contain;
+    animation: 1s ease-out 0s 1 appearLeft;
 }
 
 .vectorRight {
@@ -34,6 +36,7 @@
     background-image: url(../../assets/vector-right.png);
     background-position: top right;
     background-repeat: no-repeat;
+    animation: 1s ease-out 0s 1 appearRight;
 
 }
 
@@ -65,4 +68,43 @@
         margin: auto;
     }
 
+}
+
+@keyframes appearLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-100%, -100%);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appearRight {
+    0% {
+        opacity: 0;
+        transform: translate(100%, -100%);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appearUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

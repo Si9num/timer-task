@@ -2,11 +2,10 @@ import { useEffect, useState } from 'react'
 import '../styles/modal.css'
 
 function Modal(props){
-    const { visibility } = props;
-    const [visible,setVisible]= useState(visibility)
+    const [visible,setVisible]= useState(props.visibility)
     useEffect(()=>{
-        setVisible(visibility)
-    },[visibility])
+        setVisible(props.visibility)
+    },[props.visibility])
     return(
         <div className='wrap' style={{visibility:visible}}>
             <div className='modal'>

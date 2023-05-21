@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../styles/footer.css'
-import subBtn from './subBtn';
+import subBtn from './tools/subBtn';
 import Modal from './modal';
 
 function Footer(){
@@ -9,6 +9,7 @@ function Footer(){
     const [data,setData]= useState('')
     const [isDisabled,setIsDisabled] = useState(true)
  
+    
     const checkEmail =(ev)=>{
         setValue(ev.target.value);
         const regExp = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
