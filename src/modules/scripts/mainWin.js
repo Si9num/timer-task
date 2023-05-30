@@ -5,13 +5,18 @@ import timer from './tools/timer'
 function MainWin(){
     const [date, setDate] = useState(timer())
     const [ifDeadline, setIfDeadline] = useState(false)
-    useEffect(()=>{
-        if(!ifDeadline){
-            setInterval(() => {
+    useEffect((int)=>{
+        if(!ifDeadline && date.days > 0 && date.hours > 0 && date.minutes > 0 && date.seconds > 0){
+          int =  setInterval(() => {
                 setDate(timer())
             })
             
-    } else if(date.days === 0 && date.hours === 0 && date.minutes === 0 && date.seconds === 0 ){
+    } else {
+        clearInterval(int)
+        setDate({days:0,
+        hours:0,
+        minutes:0,
+        seconds:0})
         setIfDeadline(true)
     }
     },[ifDeadline])

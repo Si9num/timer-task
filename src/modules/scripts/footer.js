@@ -39,7 +39,7 @@ function Footer(props){
             value={value} 
             onChange={checkEmail}></input>
             <button disabled={isDisabled} className='btnEmail' onClick={()=>{subBtn();
-            setTimeout(()=>{setData(JSON.parse(sessionStorage.getItem('res')));setModal("visible");},500) ;
+            setTimeout(()=>{setData(JSON.parse(sessionStorage.getItem('res')));setModal("visible");},900) ;
                 
                 }}></button>
             </form>

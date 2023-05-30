@@ -95,6 +95,12 @@
     .cardName {
         font-size: 20px;
     }
+
+    .cardDesc p:first-child {
+
+        font-size: 16px;
+
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -115,12 +121,12 @@
     }
 
     .cardDesc a {
-        width: 90%;
+        width: 60%;
         font-size: 10px;
     }
 
     .cardDesc {
-        width: 50%;
+        width: 70%;
     }
 
     .evWinH {
@@ -133,6 +139,18 @@
 
     .cardName p:first-child {
         font-size: 14px;
+
+    }
+
+    .cardDesc p:nth-child(2) {
+        font-size: 14px;
+
+
+    }
+
+    .cardDesc p:first-child {
+
+        font-size: 10px;
 
     }
 }
